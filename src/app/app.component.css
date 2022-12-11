@@ -1,0 +1,30 @@
+/* Contenedor principal con display: flex establecido */
+.container {
+    display: flex;
+    width: 90%;
+    margin: 0 auto;
+    margin-bottom: 1rem;
+}
+
+.example-card {
+    max-width: 400px;
+}
+  
+
+/* Primera columna */
+.column-1 {
+    flex-basis: 33.33%;  /* Establece el ancho de la columna */
+    flex-grow: 1;  /* Hace que la columna se expanda y contraiga de manera proporcional */
+}
+
+/* Segunda columna */
+.column-2 {
+    flex-basis: 33.33%;  /* Establece el ancho de la columna */
+    flex-grow: 1;  /* Hace que la columna se expanda y contraiga de manera proporcional */
+}
+
+/* Tercera columna */
+.column-3 {
+    flex-basis: 33.33%;  /* Establece el ancho de la columna */
+    flex-grow: 1;  /* Hace que la columna se expanda y contraiga de manera proporcional */
+}

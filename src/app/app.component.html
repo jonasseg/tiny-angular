@@ -1,0 +1,28 @@
+<h1 class="text-center">TinyMCE 6 Angular Demo</h1>
+
+<div class="container">
+  <div class="column-1">
+    <mat-card class="example-card">
+      <mat-card-header>
+        <div mat-card-avatar class="example-header-image"></div>
+        <mat-card-title>Word1</mat-card-title>
+        <mat-card-subtitle>Word</mat-card-subtitle>
+      </mat-card-header>
+      <mat-card-actions>
+        <button mat-button color="primary">Upload Document</button>
+        <input type="file" accept="application/msword" (change)="uploadFile($event)">
+      </mat-card-actions>
+    </mat-card>
+  </div>
+</div>
+
+<editor
+  [(ngModel)]="selectedFile"
+  [init]="{
+    base_url: '/tinymce',
+    suffix: '.min',
+    plugins: 'wordcount template save image emoticons media lists preview fullscreen'
+  }"
+></editor>
+
+{{selectedFile}}
